@@ -1,0 +1,9 @@
+.bmx
+*.a
+*.i
+*.i2
+*.bak
+*.exe
+commands.html
+
+.DS_Store
