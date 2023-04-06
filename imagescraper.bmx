@@ -12,7 +12,7 @@ Import Net.libcurl
 Import Text.RegEx
 
 Rem
-bbdoc: A function 
+bbdoc: A class that hopefully will help you scrape images from a website.
 EndRem
 Type TImageScraper Abstract
 	
@@ -21,14 +21,14 @@ Private
 
 Public
 	Rem
-	bbdoc:
+	bbdoc: Point this to your .pem certificate
 	EndRem
 	Function SetCertPath(val:String)
 		cert = val
 	EndFunction
 	
 	Rem
-	bbdoc:
+	bbdoc: Returns a TList of all images found on the website.
 	EndRem
 	Function Run:TList(url:String, timeout:Long=0)
 		Local data:String = Download(url, timeout)
