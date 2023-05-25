@@ -183,4 +183,5 @@ Private
 			find = regex.Find()
 		Wend
 	EndFunction
+	
 EndType
